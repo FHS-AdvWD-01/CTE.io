@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Freehold High School CTE Pathways Program</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Home">HOME</a></li>
+          <li><a href="#About"></a>About</li>
+          <li><a href="#WebDesign">Web Design</a></li>
+          <li><a href="#HealthProfession">Health Professio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+<h1>CTE Pathways Program</h1>
+<p></p>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Bio</span>
+  </div>
+</div>
+
+<div id="About" class="bg-1">
+  <div class="container">
+    <h2><center>About the Program</center></h2>
+    <br>
+      <p> CTE is an Educational option that provides students the opportunity to explore the world of work through an academic experience that
+         includes increased opportunities for earning industry-valued credentials, college credit, and work-based learning while emphasizing real-world
+         skills and practical knowledge within a selected career focus!
+      </p>
+
+      <p>Our CTE students take specialized courses in addition to their required courses while getting the opportunity to participate in internships,
+        engage with mentors and practice what they are learning through hands-on projects.
+      </p>
+
+      <p>There is no better time to engage in CTE programs like the latest data from employers, report companies having difficulty filling job openings
+        because of a lack of qualified candidates. A skilled workforce yields a strong economy. The NJSLS career-ready practice standards which we instill
+        in our CTE students reinforces the practices and skills to produce qualified career-ready applicants.
+      </p>
+  </div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Projects</span>
+  </div>
+</div>
+
+<div id="WebDesign" class="bg-2">
+    <div class="container">
+        <h2><center>Web Design</center></h2>
+        <br>
+          <p> Info In Progress
+          </p>
+    </div>
+</div>
+
+  <div class="bgimg-3">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Tools</span>
+    </div>
+  </div>
+
+  <div id="HealthProfession" class="bg-3">
+    <div class="container">
+      <h2><center>Health Profession</center></h2>
+      <br>
+        <p> Info in Progress
+        </p>
+    </div>
+  </div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+  </body>
+</html>
